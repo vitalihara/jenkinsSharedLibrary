@@ -9,6 +9,6 @@ def call(params) {
     def level = params.level
     def msg = params.msg
 
-    println "${env.JOB_NAME} ${level.toUpperCase()}: ${msg}."
+    println "${env.JOB_NAME} - ${env.BUILD_NUMBER} -  ${level.toUpperCase()}: ${msg}."
 
 }
